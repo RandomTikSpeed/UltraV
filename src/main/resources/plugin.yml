@@ -15,4 +15,7 @@ commands:
   clearchat:
     description: Clears everyone's chat (250 lines)
     usage: /<command>
-    permission: ultrav.clearchat
+    permission: ultrav.admin
+  store:
+    description: Sends a link to the store
+    usage: /<command>

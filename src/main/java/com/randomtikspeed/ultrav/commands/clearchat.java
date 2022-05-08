@@ -17,7 +17,7 @@ public class clearchat implements CommandExecutor {
         }
 
         Player player = (Player) sender;
-        if (command.getName().equalsIgnoreCase("clearchat") && player.hasPermission("ultrav.clearchat")) {
+        if (command.getName().equalsIgnoreCase("clearchat") && player.hasPermission("ultrav.admin")) {
             for (int i = 0; i < 251; i++) {
                 Bukkit.broadcast(Component.text(" "));
             }
