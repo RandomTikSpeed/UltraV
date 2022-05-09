@@ -1,0 +1,21 @@
+name: UltraV
+version: '1.0.4-SNAPSHOT'
+main: com.randomtikspeed.ultrav.UltraV
+api-version: 1.18
+authors: [ RandomTikSpeed ]
+commands:
+  start:
+    description: Start quests
+    usage: /<command>
+    permission: ultrav.start
+  ultrav:
+    description: UltraV Admin Panel
+    usage: /<command>
+    permission: ultrav.admin
+  clearchat:
+    description: Clears everyone's chat (250 lines)
+    usage: /<command>
+    permission: ultrav.admin
+  store:
+    description: Sends a link to the store
+    usage: /<command>

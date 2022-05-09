@@ -20,9 +20,11 @@ public class ultrav implements CommandExecutor {
             AdminMain gui = new AdminMain();
             player.openInventory(gui.getInventory());
         }
-
-
-
+        if (args.length == 1) {
+            if (args[0].equalsIgnoreCase("about")) {
+                player.sendMessage("§7Check out the plugin's wiki page: §6github.com/RandomTikSpeed/UltraV/wiki");
+            }
+        }
         return true;
     }
 }
