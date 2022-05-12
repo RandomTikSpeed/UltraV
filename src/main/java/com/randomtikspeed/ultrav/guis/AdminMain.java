@@ -13,16 +13,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AdminMain implements InventoryHolder {
-
         private final Inventory inv;
 
+    // Item creation template
+    private @NotNull ItemStack createItem(Component name, Material mat, List<Component> lore) {
+        ItemStack item = new ItemStack(mat, 1);
+        ItemMeta meta = item.getItemMeta();
+        meta.displayName(name);
+        meta.lore(lore);
+        item.setItemMeta(meta);
+        return item;
+    }
+
+        // AdminMain
         public AdminMain() {
             inv = Bukkit.createInventory(this, 27, Component.text("UVQ Admin Panel"));
-            init();
+            nullItem();
         }
 
-        private void init() {
-            // Gray Stained Glass Pane
+
+
+        // Null Item
+        private void nullItem() {
             ItemStack item;
             List<Component> lore = new ArrayList<>();
             lore.add(Component.text(""));
@@ -30,18 +42,8 @@ public class AdminMain implements InventoryHolder {
             for (int i = 0; i < 27; i++) {
                 inv.setItem(i, item);
             }
-
-
         }
 
-    private ItemStack createItem(Component name, Material mat, List<Component> lore) {
-            ItemStack item = new ItemStack(mat, 1);
-            ItemMeta meta = item.getItemMeta();
-            meta.displayName(name);
-            meta.lore(lore);
-            item.setItemMeta(meta);
-            return item;
-        }
 
     @Override
     public @NotNull Inventory getInventory() {

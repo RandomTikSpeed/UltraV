@@ -19,3 +19,6 @@ commands:
   store:
     description: Sends a link to the store
     usage: /<command>
+  kfc:
+    description: Gives you KFC (suggested by ShadowRexYT, only avaliable to ShadowRexYT)
+    usage: /<command>

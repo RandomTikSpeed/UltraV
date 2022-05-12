@@ -1,10 +1,7 @@
 package com.randomtikspeed.ultrav;
 
-import com.randomtikspeed.ultrav.commands.clearchat;
-import com.randomtikspeed.ultrav.commands.start;
-import com.randomtikspeed.ultrav.commands.store;
-import com.randomtikspeed.ultrav.commands.ultrav;
-import com.randomtikspeed.ultrav.events.GUI;
+import com.randomtikspeed.ultrav.commands.*;
+import com.randomtikspeed.ultrav.events.GUIListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Objects;
@@ -18,11 +15,12 @@ public final class UltraV extends JavaPlugin {
     @Override
     public void onEnable() {
         UltraV.instance = this;
-        getServer().getPluginManager().registerEvents(new GUI(), this);
+        getServer().getPluginManager().registerEvents(new GUIListener(), this);
         Objects.requireNonNull(getCommand("start")).setExecutor(new start());
         Objects.requireNonNull(getCommand("ultrav")).setExecutor(new ultrav());
         Objects.requireNonNull(getCommand("clearchat")).setExecutor(new clearchat());
         Objects.requireNonNull(getCommand("store")).setExecutor(new store());
+        Objects.requireNonNull(getCommand("kfc")).setExecutor(new kfc());
         getServer().getConsoleSender().sendMessage("§aUltra V is enabled!");
     }
 
