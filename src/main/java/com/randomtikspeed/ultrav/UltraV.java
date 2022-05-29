@@ -1,6 +1,7 @@
 package com.randomtikspeed.ultrav;
 
 import com.randomtikspeed.ultrav.commands.*;
+import com.randomtikspeed.ultrav.commands.didyoumean.hub;
 import com.randomtikspeed.ultrav.events.GUIListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -21,6 +22,7 @@ public final class UltraV extends JavaPlugin {
         Objects.requireNonNull(getCommand("clearchat")).setExecutor(new clearchat());
         Objects.requireNonNull(getCommand("store")).setExecutor(new store());
         Objects.requireNonNull(getCommand("kfc")).setExecutor(new kfc());
+        Objects.requireNonNull(getCommand("hub")).setExecutor(new hub());
         getServer().getConsoleSender().sendMessage("§aUltra V is enabled!");
     }
 

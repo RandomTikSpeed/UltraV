@@ -12,8 +12,8 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AdminMain implements InventoryHolder {
-        private final Inventory inv;
+public class AdminItems implements InventoryHolder {
+    private final Inventory inv;
 
     // Item creation template
     private @NotNull ItemStack createItem(Component name, Material mat, List<Component> lore) {
@@ -25,24 +25,25 @@ public class AdminMain implements InventoryHolder {
         return item;
     }
 
-        // AdminMain
-        public AdminMain() {
-            inv = Bukkit.createInventory(this, 27, Component.text("Ultra V Admin Panel"));
-            nullItem();
+    // Admin Custom Items
+    public AdminItems() {
+        inv = Bukkit.createInventory(this, 27, Component.text("Ultra V Admin Items"));
+        nullItem();
+    }
+
+    // Null Item
+    private void nullItem() {
+        ItemStack item;
+        List<Component> lore = new ArrayList<>();
+        lore.add(Component.text(""));
+        item = createItem(Component.text(""), Material.GRAY_STAINED_GLASS_PANE, lore);
+        for (int i = 0; i < 27; i++) {
+            inv.setItem(i, item);
         }
+    }
 
 
 
-        // Null Item
-        private void nullItem() {
-            ItemStack item;
-            List<Component> lore = new ArrayList<>();
-            lore.add(Component.text(""));
-            item = createItem(Component.text(""), Material.GRAY_STAINED_GLASS_PANE, lore);
-            for (int i = 0; i < 27; i++) {
-                inv.setItem(i, item);
-            }
-        }
 
 
     @Override

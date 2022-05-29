@@ -22,3 +22,4 @@ commands:
   kfc:
     description: Gives you KFC (suggested by ShadowRexYT, only avaliable to ShadowRexYT)
     usage: /<command>
+  hub:

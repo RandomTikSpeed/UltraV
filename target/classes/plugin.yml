@@ -1,5 +1,5 @@
 name: UltraV
-version: '1.0.4-SNAPSHOT'
+version: '1.0.6-SNAPSHOT'
 main: com.randomtikspeed.ultrav.UltraV
 api-version: 1.18
 authors: [ RandomTikSpeed ]
@@ -19,3 +19,7 @@ commands:
   store:
     description: Sends a link to the store
     usage: /<command>
+  kfc:
+    description: Gives you KFC (suggested by ShadowRexYT, only avaliable to ShadowRexYT)
+    usage: /<command>
+  hub:
