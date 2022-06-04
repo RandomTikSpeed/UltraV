@@ -90,7 +90,7 @@ public class RulesItems {
     private void createBack() {
         ItemStack item = new ItemStack(Material.BARRIER, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Component.text("§cGo Back"));
+        meta.setDisplayName(String.valueOf(Component.text("§cGo Back")));
         item.setItemMeta(meta);
         back = item;
 
@@ -116,7 +116,7 @@ public class RulesItems {
     private void createDCRules() {
         ItemStack item = new ItemStack(Material.LAPIS_LAZULI, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName("§9Discord Rules"));
+        meta.setDisplayName("§9Discord Rules");
         List<String> lore = new ArrayList<>();
         lore.add("§7Click to check out");
         lore.add("§7the Discord server");
@@ -133,11 +133,11 @@ public class RulesItems {
     private void createMCRule1() {
         ItemStack item = new ItemStack(Material.PAPER, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Component.text("§61. No hacking"));
-        List<Component> lore = new ArrayList<>();
-        lore.add(Component.text("§7This includes but is not"));
-        lore.add(Component.text("§7limited to xray, minimaps,"));
-        lore.add(Component.text("§7and automine"));
+        meta.setDisplayName(String.valueOf(Component.text("§61. No hacking")));
+        List<String> lore = new ArrayList<>();
+        lore.add(String.valueOf(Component.text("§7This includes but is not")));
+        lore.add(String.valueOf(Component.text("§7limited to xray, minimaps,")));
+        lore.add(String.valueOf(Component.text("§7and automine")));
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -148,9 +148,9 @@ public class RulesItems {
     private void createMCRule2() {
         ItemStack item = new ItemStack(Material.PAPER, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Component.text("§62. Do not beg the staff for items"));
-        List<Component> lore = new ArrayList<>();
-        lore.add(Component.text("§7We will not give them to you"));
+        meta.setDisplayName(String.valueOf(Component.text("§62. Do not beg the staff for items")));
+        List<String> lore = new ArrayList<>();
+        lore.add(String.valueOf(Component.text("§7We will not give them to you")));
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -161,11 +161,11 @@ public class RulesItems {
     private void createMCRule3() {
         ItemStack item = new ItemStack(Material.PAPER, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Component.text("§63. Lag machines are not allowed"));
-        List<Component> lore = new ArrayList<>();
-        lore.add(Component.text("§7If found, any lag machines"));
-        lore.add(Component.text("§7will be removed and a"));
-        lore.add(Component.text("§7punishment may be issued"));
+        meta.setDisplayName(String.valueOf(Component.text("§63. Lag machines are not allowed")));
+        List<String> lore = new ArrayList<>();
+        lore.add(String.valueOf(Component.text("§7If found, any lag machines")));
+        lore.add(String.valueOf(Component.text("§7will be removed and a")));
+        lore.add(String.valueOf(Component.text("§7punishment may be issued")));
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -176,12 +176,12 @@ public class RulesItems {
     private void createMCRule4() {
         ItemStack item = new ItemStack(Material.PAPER, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Component.text("§64. Do not bug abuse"));
-        List<Component> lore = new ArrayList<>();
-        lore.add(Component.text("§7If you find a bug / glitch,"));
-        lore.add(Component.text("§7please tell a staff member."));
-        lore.add(Component.text("§7This includes inconsistencies"));
-        lore.add(Component.text("§7in /shop"));
+        meta.setDisplayName(String.valueOf(Component.text("§64. Do not bug abuse")));
+        List<String> lore = new ArrayList<>();
+        lore.add(String.valueOf(Component.text("§7If you find a bug / glitch,")));
+        lore.add(String.valueOf(Component.text("§7please tell a staff member.")));
+        lore.add(String.valueOf(Component.text("§7This includes inconsistencies")));
+        lore.add(String.valueOf(Component.text("§7in /shop")));
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -192,10 +192,10 @@ public class RulesItems {
     private void createMCRule5() {
         ItemStack item = new ItemStack(Material.PAPER, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Component.text("§65. Do not target new players"));
-        List<Component> lore = new ArrayList<>();
-        lore.add(Component.text("§7Don't target only new players, as"));
-        lore.add(Component.text("§7this can drive them off our server"));
+        meta.setDisplayName(String.valueOf(Component.text("§65. Do not target new players")));
+        List<String> lore = new ArrayList<>();
+        lore.add(String.valueOf(Component.text("§7Don't target only new players, as")));
+        lore.add(String.valueOf(Component.text("§7this can drive them off our server")));
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -206,10 +206,10 @@ public class RulesItems {
     private void createMCRule6() {
         ItemStack item = new ItemStack(Material.PAPER, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Component.text("§66. Do not tp trap"));
-        List<Component> lore = new ArrayList<>();
-        lore.add(Component.text("§7This gives you an unfair advantage"));
-        lore.add(Component.text("§7over unsuspecting or new players"));
+        meta.setDisplayName(String.valueOf(Component.text("§66. Do not tp trap")));
+        List<String> lore = new ArrayList<>();
+        lore.add(String.valueOf(Component.text("§7This gives you an unfair advantage")));
+        lore.add(String.valueOf(Component.text("§7over unsuspecting or new players")));
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -222,10 +222,10 @@ public class RulesItems {
     private void createDCRule1() {
         ItemStack item = new ItemStack(Material.PAPER, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Component.text("§91. Don't spam"));
-        List<Component> lore = new ArrayList<>();
-        lore.add(Component.text("§7Don't clog the chats with lots"));
-        lore.add(Component.text("§7of unnecessary messages"));
+        meta.setDisplayName(String.valueOf(Component.text("§91. Don't spam")));
+        List<String> lore = new ArrayList<>();
+        lore.add(String.valueOf(Component.text("§7Don't clog the chats with lots")));
+        lore.add(String.valueOf(Component.text("§7of unnecessary messages")));
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -236,10 +236,10 @@ public class RulesItems {
     private void createDCRule2() {
         ItemStack item = new ItemStack(Material.PAPER, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Component.text("§92. No excessive swearing"));
-        List<Component> lore = new ArrayList<>();
-        lore.add(Component.text("§7Swearing is allowed, but"));
-        lore.add(Component.text("§7use it in moderation"));
+        meta.setDisplayName(String.valueOf(Component.text("§92. No excessive swearing")));
+        List<String> lore = new ArrayList<>();
+        lore.add(String.valueOf(Component.text("§7Swearing is allowed, but")));
+        lore.add(String.valueOf(Component.text("§7use it in moderation")));
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -250,10 +250,10 @@ public class RulesItems {
     private void createDCRule3() {
         ItemStack item = new ItemStack(Material.PAPER, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Component.text("§93. No NSFW"));
-        List<Component> lore = new ArrayList<>();
-        lore.add(Component.text("§7Do not talk about gore / sexual"));
-        lore.add(Component.text("§7topics, this is a Minecraft server"));
+        meta.setDisplayName(String.valueOf(Component.text("§93. No NSFW")));
+        List<String> lore = new ArrayList<>();
+        lore.add(String.valueOf(Component.text("§7Do not talk about gore / sexual")));
+        lore.add(String.valueOf(Component.text("§7topics, this is a Minecraft server")));
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -264,10 +264,10 @@ public class RulesItems {
     private void createDCRule4() {
         ItemStack item = new ItemStack(Material.PAPER, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Component.text("§94. No hate speech, slurs, death threats"));
-        List<Component> lore = new ArrayList<>();
-        lore.add(Component.text("§7Homophobia, racism, ableism and other"));
-        lore.add(Component.text("§7forms of hate speech will not be tolerated"));
+        meta.setDisplayName(String.valueOf(Component.text("§94. No hate speech, slurs, death threats")));
+        List<String> lore = new ArrayList<>();
+        lore.add(String.valueOf(Component.text("§7Homophobia, racism, ableism and other")));
+        lore.add(String.valueOf(Component.text("§7forms of hate speech will not be tolerated")));
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -278,9 +278,9 @@ public class RulesItems {
     private void createDCRule5() {
         ItemStack item = new ItemStack(Material.PAPER, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Component.text("§95. No sensitive or controversial topics"));
-        List<Component> lore = new ArrayList<>();
-        lore.add(Component.text("§7This is not the place for political debates"));
+        meta.setDisplayName(String.valueOf(Component.text("§95. No sensitive or controversial topics")));
+        List<String> lore = new ArrayList<>();
+        lore.add(String.valueOf(Component.text("§7This is not the place for political debates")));
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -291,10 +291,10 @@ public class RulesItems {
     private void createDCRule6() {
         ItemStack item = new ItemStack(Material.PAPER, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Component.text("§96. Do not unnecessarily ping staff"));
-        List<Component> lore = new ArrayList<>();
-        lore.add(Component.text("§7If you need help, please don't ping"));
-        lore.add(Component.text("§7us 13 times. We have lives too"));
+        meta.setDisplayName(String.valueOf(Component.text("§96. Do not unnecessarily ping staff")));
+        List<String> lore = new ArrayList<>();
+        lore.add(String.valueOf(Component.text("§7If you need help, please don't ping")));
+        lore.add(String.valueOf(Component.text("§7us 13 times. We have lives too")));
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -305,10 +305,10 @@ public class RulesItems {
     private void createDCRule7() {
         ItemStack item = new ItemStack(Material.PAPER, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Component.text("§97. Use the correct channels"));
-        List<Component> lore = new ArrayList<>();
-        lore.add(Component.text("§7Try to keep the subject of"));
-        lore.add(Component.text("§7conversation relevant to the channel"));
+        meta.setDisplayName(String.valueOf(Component.text("§97. Use the correct channels")));
+        List<String> lore = new ArrayList<>();
+        lore.add(String.valueOf(Component.text("§7Try to keep the subject of")));
+        lore.add(String.valueOf(Component.text("§7conversation relevant to the channel")));
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -319,9 +319,9 @@ public class RulesItems {
     private void createDCRule8() {
         ItemStack item = new ItemStack(Material.PAPER, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Component.text("§98. Do not target or harass anyone"));
-        List<Component> lore = new ArrayList<>();
-        lore.add(Component.text("§7Harassment of any kind will not be tolerated"));
+        meta.setDisplayName(String.valueOf(Component.text("§98. Do not target or harass anyone")));
+        List<String> lore = new ArrayList<>();
+        lore.add(String.valueOf(Component.text("§7Harassment of any kind will not be tolerated")));
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -332,9 +332,9 @@ public class RulesItems {
     private void createDCRule9() {
         ItemStack item = new ItemStack(Material.PAPER, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Component.text("§99. Do not self advertise / promote"));
-        List<Component> lore = new ArrayList<>();
-        lore.add(Component.text("§7Don't advertise your stuff"));
+        meta.setDisplayName(String.valueOf(Component.text("§99. Do not self advertise / promote")));
+        List<String> lore = new ArrayList<>();
+        lore.add(String.valueOf(Component.text("§7Don't advertise your stuff")));
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -345,9 +345,9 @@ public class RulesItems {
     private void createDCRule10() {
         ItemStack item = new ItemStack(Material.PAPER, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.setDisplayName(Component.text("§910. Follow Discord's TOS"));
-        List<Component> lore = new ArrayList<>();
-        lore.add(Component.text("§6Right click to view their TOS"));
+        meta.setDisplayName(String.valueOf(Component.text("§910. Follow Discord's TOS")));
+        List<String> lore = new ArrayList<>();
+        lore.add(String.valueOf(Component.text("§6Right click to view their TOS")));
         meta.setLore(lore);
         meta.addEnchant(Enchantment.LUCK, 1, false);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

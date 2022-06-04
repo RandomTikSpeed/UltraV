@@ -1,8 +1,8 @@
 package com.randomtikspeed.ultrav.spigot.events;
 
-import com.randomtikspeed.ultrav.spigot.guis.RulesDC;
-import com.randomtikspeed.ultrav.spigot.guis.RulesMC;
-import com.randomtikspeed.ultrav.spigot.guis.RulesMain;
+import com.randomtikspeed.ultrav.spigot.guis.rules.RulesDC;
+import com.randomtikspeed.ultrav.spigot.guis.rules.RulesMC;
+import com.randomtikspeed.ultrav.spigot.guis.rules.RulesMain;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -30,7 +30,7 @@ public class RulesMainEvents implements Listener {
             }
             // Discord Rules
             if (e.getCurrentItem().getType() == Material.LAPIS_LAZULI) {
-                RulesDC gui = new RulesDC(uv);
+                RulesDC gui = new RulesDC();
                 player.openInventory(gui.getInventory());
             }
         }

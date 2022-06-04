@@ -1,7 +1,7 @@
 package com.randomtikspeed.ultrav.spigot.events;
 
-import com.randomtikspeed.ultrav.spigot.guis.RulesDC;
-import com.randomtikspeed.ultrav.spigot.guis.RulesMain;
+import com.randomtikspeed.ultrav.spigot.guis.rules.RulesDC;
+import com.randomtikspeed.ultrav.spigot.guis.rules.RulesMain;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

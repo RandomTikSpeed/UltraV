@@ -33,7 +33,8 @@ public class ClearChat extends BaseCommand
             sender.sendMessage("§7[§cError§7] §7This command can only be executed in game!");
             return true;
         }
-        if (player.hasPermission("ultrav.admin")) {
+        if (player.hasPermission("ultrav.admin"))
+        {
             for (int i = 0; i < 251; i++) {
                 Bukkit.getServer().broadcastMessage(cm.Colour("&6 "));
             }

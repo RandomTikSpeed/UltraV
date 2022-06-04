@@ -1,6 +1,6 @@
 package com.randomtikspeed.ultrav.spigot.events;
 
-import com.randomtikspeed.ultrav.spigot.guis.AdminMain;
+import com.randomtikspeed.ultrav.spigot.guis.admin.AdminMain;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

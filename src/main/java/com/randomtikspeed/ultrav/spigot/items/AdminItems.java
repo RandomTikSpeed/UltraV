@@ -1,4 +1,4 @@
-package com.randomtikspeed.ultrav.spigot.guis;
+package com.randomtikspeed.ultrav.spigot.items;
 
 import com.randomtikspeed.ultrav.spigot.UltraV;
 import com.randomtikspeed.ultrav.spigot.utils.messages.CoreMessages;
