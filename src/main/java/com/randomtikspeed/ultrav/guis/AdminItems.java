@@ -7,7 +7,6 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,11 +15,11 @@ public class AdminItems implements InventoryHolder {
     private final Inventory inv;
 
     // Item creation template
-    private @NotNull ItemStack createItem(Component name, Material mat, List<Component> lore) {
+    private ItemStack createItem(String name, Material mat, List<String> lore) {
         ItemStack item = new ItemStack(mat, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.displayName(name);
-        meta.lore(lore);
+        meta.setDisplayName(name);
+        meta.setLore(lore);
         item.setItemMeta(meta);
         return item;
     }

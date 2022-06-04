@@ -19,8 +19,8 @@ public class AdminMain implements InventoryHolder {
     private @NotNull ItemStack createItem(Component name, Material mat, List<Component> lore) {
         ItemStack item = new ItemStack(mat, 1);
         ItemMeta meta = item.getItemMeta();
-        meta.displayName(name);
-        meta.lore(lore);
+        meta.setDisplayName(name);
+        meta.setLore(lore);
         item.setItemMeta(meta);
         return item;
     }

@@ -2,7 +2,7 @@ name: UltraV
 version: '1.0.6-SNAPSHOT'
 main: com.randomtikspeed.ultrav.UltraV
 api-version: 1.18
-authors: [ RandomTikSpeed ]
+author: RandomTikSpeed
 commands:
   start:
     description: Start quests
@@ -23,3 +23,6 @@ commands:
     description: Gives you KFC (suggested by ShadowRexYT, only avaliable to ShadowRexYT)
     usage: /<command>
   hub:
+  rules:
+    description: Opens the rules GUI
+    usage: /<command>
