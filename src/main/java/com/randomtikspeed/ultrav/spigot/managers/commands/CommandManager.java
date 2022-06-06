@@ -2,6 +2,7 @@ package com.randomtikspeed.ultrav.spigot.managers.commands;
 
 
 import co.aikar.commands.BukkitCommandManager;
+import com.randomtikspeed.ultrav.core.interfaces.core.IManager;
 import com.randomtikspeed.ultrav.spigot.UltraV;
 import com.randomtikspeed.ultrav.spigot.commands.*;
 import com.randomtikspeed.ultrav.spigot.commands.didyoumean.Hub;

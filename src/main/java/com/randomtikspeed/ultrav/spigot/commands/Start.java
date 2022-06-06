@@ -14,7 +14,6 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.jetbrains.annotations.NotNull;
 
 public class Start extends BaseCommand {
-    final UltraV plugin = UltraV.getInstance();
     private UltraV uv;
     private CoreMessages cm;
 
@@ -43,7 +42,7 @@ public class Start extends BaseCommand {
                         public void run() {
                             player.sendMessage("5 second test");
                         }
-                    }.runTaskLater(plugin, 20L * 5L /*<-- the delay */);
+                    }.runTaskLater(uv, 20L * 5L /*<-- the delay */);
                 }
             }
         }
