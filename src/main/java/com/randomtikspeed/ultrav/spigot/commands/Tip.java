@@ -5,17 +5,16 @@ import co.aikar.commands.annotation.CommandCompletion;
 import co.aikar.commands.annotation.Default;
 import co.aikar.commands.annotation.Syntax;
 import com.randomtikspeed.ultrav.spigot.UltraV;
-import com.randomtikspeed.ultrav.spigot.guis.rules.RulesMain;
 import com.randomtikspeed.ultrav.spigot.utils.messages.CoreMessages;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class Rules extends BaseCommand
+public class Tip extends BaseCommand
 {
     private UltraV uv;
     private CoreMessages cm;
 
-    public Rules(UltraV uv)
+    public Tip(UltraV uv)
     {
         this.uv = uv;
         cm = uv.getCore().getMessageManager().getCoreMessages();
@@ -23,15 +22,15 @@ public class Rules extends BaseCommand
     @Default
     @Syntax("")
     @CommandCompletion("")
-    public boolean rules(CommandSender sender, String[] args)
+    public boolean tip(CommandSender sender, String[] args)
     {
         if (!(sender instanceof Player player))
         {
             sender.sendMessage("§7[§cError§7] §7This command can only be executed in game!");
             return true;
         }
-        RulesMain gui = new RulesMain(uv);
-        player.openInventory(gui.getInventory());
+        player.sendMessage("§7Coming soon!");
         return true;
     }
 }
+// Make an array with tips and use a random number generator to pick a random one

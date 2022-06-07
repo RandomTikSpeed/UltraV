@@ -1,5 +1,5 @@
 name: UltraV
 version: '${project.version}'
-main: com.randomtikspeed.UltraV.UltraV
+main: com.randomtikspeed.ultrav.UltraV
 api-version: 1.18
 author: RandomTikSpeed

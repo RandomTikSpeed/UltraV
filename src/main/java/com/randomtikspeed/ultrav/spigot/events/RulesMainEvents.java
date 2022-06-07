@@ -1,5 +1,6 @@
 package com.randomtikspeed.ultrav.spigot.events;
 
+import com.randomtikspeed.ultrav.spigot.UltraV;
 import com.randomtikspeed.ultrav.spigot.guis.rules.RulesDC;
 import com.randomtikspeed.ultrav.spigot.guis.rules.RulesMC;
 import com.randomtikspeed.ultrav.spigot.guis.rules.RulesMain;
@@ -10,7 +11,10 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 
 public class RulesMainEvents implements Listener {
-
+    private UltraV instance;
+    public RulesMainEvents(UltraV instance) {
+        this.instance = instance;
+    }
     @EventHandler
     public void rulesMainEvents(InventoryClickEvent e) {
         if (e.getClickedInventory() == null) {return;}
@@ -25,12 +29,12 @@ public class RulesMainEvents implements Listener {
             // Minecraft Rules
             if (e.getCurrentItem().getType() == Material.OAK_SAPLING) {
                 player.closeInventory();
-                RulesMC gui = new RulesMC();
+                RulesMC gui = new RulesMC(instance);
                 player.openInventory(gui.getInventory());
             }
             // Discord Rules
             if (e.getCurrentItem().getType() == Material.LAPIS_LAZULI) {
-                RulesDC gui = new RulesDC();
+                RulesDC gui = new RulesDC(instance);
                 player.openInventory(gui.getInventory());
             }
         }
